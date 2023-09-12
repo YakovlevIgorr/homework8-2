@@ -7,7 +7,7 @@
 //std::exception	added;
 
     Figure::Figure(){
-        this->figure = "Фигура: ";
+        this->figure = "Фигура";
         this->sides = 0;
     }
 
@@ -15,14 +15,15 @@
         if(sides == 0) {
             space = "\n\n";
             return true;
-        }else Error("Слишком много сторон");
+        }
         return false;
     }
 
+
     void Figure::print_info(){
-        bool right_or_not = check();
+       // bool right_or_not = check();
 
-
+        std::cout << figure;
 //        std::cout << figure << "\n" << (right_or_not? "Правильная\n": "Неправильная\n")
 //                  << "Количество сторон: " << this->sides << space;
 }

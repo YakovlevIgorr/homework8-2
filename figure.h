@@ -4,7 +4,6 @@
 
 #pragma once
 #include <string>
-#include "Error.h"
 class Figure{
 protected:
     std::string figure;

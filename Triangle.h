@@ -3,13 +3,16 @@
 //
 
 #pragma once
-#include "figure.h"
-class Triangle:public Figure{
+#include <string>
+class Triangle{
+protected:
+    std::string figure;
+
 protected:
     int a, b, c;
     int A, B, C;
 public:
     Triangle(int, int, int, int, int, int);
-    bool check() override;
-    void print_info() override;
+    virtual void print_info();// override;
+    void set_data(std::string, int);
 };
